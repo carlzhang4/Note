@@ -27,8 +27,7 @@
     padding: 2px;">文件目录结构</div>
 </center>
 
-2. 复制build.sbt放入根目录, 在命令行根目录下输入sbt构建生成project的build.property, 修改其中的版本为1.1.1
-3. 修改launch.scala,内容如下，修改相关变量为电路文件和测试文件的名字（我的例子里是Adder和AdderTests）
+2. 修改launch.scala,内容如下，修改相关变量为电路文件和测试文件的名字（我的例子里是Adder和AdderTests）
 
     ```scala
     package solutions
@@ -49,11 +48,11 @@
     }
     ```
 
-1. 将build.sbt复制过来到根目录下
-2. 命令行根目录下运行sbt命令，会报错并生成几个新目录，输入exit退出sbt，修改生成的project目录下的build.properties里的sbt.version为1.1.1
-3. 大功告成，再次使用sbt指令不会报错了
-   + test:runMain examples.Launcher Adder 测试，
-   + test:runMain examples.Launcher Adder --backend-name verilator 生成verilog
+3. 将build.sbt复制过来到根目录下
+4. 命令行根目录下运行sbt命令，会报错并生成几个新目录，输入exit退出sbt，修改生成的project目录下的build.properties里的sbt.version为1.1.1
+5. 大功告成，再次使用sbt指令不会报错了
+   + test:runMain solutions.Launcher Adder 测试，
+   + test:runMain solutions.Launcher Adder --backend-name verilator 生成verilog
 
 
 

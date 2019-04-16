@@ -1,5 +1,11 @@
 #基础
 + 脚注:hello[^1]
+---
+<hr>
+
+***
+___
+
 + img
     ```html
     <center>
@@ -13,4 +19,5 @@
     color: #999;
     padding: 2px;">文件目录结构</div>
     </center>
+
 [^1]: hi
