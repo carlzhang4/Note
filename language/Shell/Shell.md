@@ -75,9 +75,21 @@
     for i in "$@"; do
     echo $i
     ```
++ if语句
+    ```shell
+    if [ $a == $b ]
+    then
+    echo "a 等于 b"
+    elif [ $a -gt $b ]
+    then
+    echo "a 大于 b"
+    else
+    echo "没有符合的条件"
+    fi
+    ```
 
 ---
-#基本运算符
+## 基本运算符
 + 算数运算符
     + (+ - * / %)使用expr和反引号,运算符左右要有空格
     ```shell
@@ -137,7 +149,7 @@
     command > /dev/null #起到"禁止输出"的效果
 
 ---
-#环境变量
+## 环境变量
 + /etc/profile文件中添加变量,对所有用户永久生效
 + ~/.bash_profile,对当前用户永久生效
 + 临时,开启子shell,重新打开后就没了
@@ -184,3 +196,13 @@
     ls -l | grep staff
     ```
 + whoami 显示用户
+
++ chmod 修改文件权限
+    ```shell
+    chmod +x #增加可执行
+    ```
+
++ mv既能移动文件也能修改文件名
+    ```shell
+    mv a.txt dir/b.txt
+    ```
